@@ -1,10 +1,10 @@
-# 🏥 Diabetes Diet Plan Generator with LangChain & LangGraph
+#  Diabetes Diet Plan Generator with LangChain & LangGraph
 
 A comprehensive AI-powered system that generates personalized diabetes diet plans using **LangChain**, **LangGraph**, and **Ollama (Phi-3)**. The system uses state-driven workflows and RAG (Retrieval-Augmented Generation) to create medically-informed, detailed meal plans tailored to individual patient profiles.
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Features](#features)
 - [Architecture](#architecture)
@@ -21,9 +21,9 @@ A comprehensive AI-powered system that generates personalized diabetes diet plan
 
 ---
 
-## ✨ Features
+##  Features
 
-### 🎯 Core Capabilities
+###  Core Capabilities
 - **Personalized Diet Plans**: Custom meal plans based on 8 health parameters
 - **Risk Assessment**: AI-powered diabetes risk evaluation
 - **RAG Integration**: Retrieves similar patient cases for informed recommendations
@@ -31,19 +31,19 @@ A comprehensive AI-powered system that generates personalized diabetes diet plan
 - **State Management**: LangGraph orchestrates multi-step workflow
 - **Medical Accuracy**: Considers glucose levels, BMI, age, insulin, and more
 
-### 🍽️ Diet Plan Components
-- ✅ **Breakfast Plan** - Morning meals with timing and portions
-- ✅ **Lunch Plan** - Main meal with balanced macros
-- ✅ **Dinner Plan** - Light evening meals
-- ✅ **Snack Recommendations** - Mid-morning, evening, and bedtime options
-- ✅ **Foods to Avoid** - Specific items to eliminate
-- ✅ **Lifestyle Recommendations** - Exercise, sleep, hydration, monitoring
-- ✅ **Nutritional Benefits** - Why each food helps manage diabetes
-- ✅ **Portion Control** - Exact measurements for every meal
+###  Diet Plan Components
+-  **Breakfast Plan** - Morning meals with timing and portions
+-  **Lunch Plan** - Main meal with balanced macros
+-  **Dinner Plan** - Light evening meals
+-  **Snack Recommendations** - Mid-morning, evening, and bedtime options
+-  **Foods to Avoid** - Specific items to eliminate
+-  **Lifestyle Recommendations** - Exercise, sleep, hydration, monitoring
+-  **Nutritional Benefits** - Why each food helps manage diabetes
+-  **Portion Control** - Exact measurements for every meal
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ### Technology Stack
 ```
@@ -77,7 +77,7 @@ A comprehensive AI-powered system that generates personalized diabetes diet plan
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 ### Prerequisites
 - Python 3.9 or higher
@@ -123,7 +123,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🎬 Quick Start
+##  Quick Start
 
 ### 1. Start Ollama Server
 ```bash
@@ -165,7 +165,7 @@ print(diet_plan)
 
 ---
 
-## 📖 Usage
+##  Usage
 
 ### Basic Usage
 ```python
@@ -213,7 +213,7 @@ diet_plan = generate_personalized_diet_plan(patient)
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 diabetes-diet-planner/
@@ -231,7 +231,7 @@ diabetes-diet-planner/
 
 ---
 
-## 🔧 How It Works
+##  How It Works
 
 ### 1. **Patient Input Processing**
 ```python
@@ -285,7 +285,7 @@ final_state = app.invoke(initial_state)
 
 ---
 
-## ⚙️ Configuration
+##  Configuration
 
 ### Modify LLM Parameters
 Edit the `get_llm()` function:
@@ -321,14 +321,14 @@ similar_docs = vector_store.similarity_search(
 
 ---
 
-## 📊 Output Example
+##  Output Example
 
 ```
 ================================================================================
-🏥 COMPREHENSIVE DIABETES DIET PLAN
+ COMPREHENSIVE DIABETES DIET PLAN
 ================================================================================
 
-📋 PATIENT SUMMARY:
+ PATIENT SUMMARY:
 Patient Profile:
 - Age: 50 years
 - Pregnancies: 2
@@ -337,7 +337,7 @@ Patient Profile:
 - BMI: 33.6
 - Diabetes Pedigree Function: 0.627
 
-⚠️  RISK ASSESSMENT:
+  RISK ASSESSMENT:
 Risk Level: High Risk
 Key Risk Factors:
 1. Elevated glucose level (148 mg/dL - above normal)
@@ -346,7 +346,7 @@ Key Risk Factors:
 ...
 
 ================================================================================
-🌅 BREAKFAST PLAN
+ BREAKFAST PLAN
 ================================================================================
 TIMING: 7:00 AM - 8:00 AM (within 1 hour of waking)
 
@@ -363,14 +363,14 @@ Option 2: Vegetable omelet (2 eggs + 1 egg white) with:
 ...
 
 ================================================================================
-🌞 LUNCH PLAN
+ LUNCH PLAN
 ================================================================================
 ...
 ```
 
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -417,13 +417,13 @@ def get_llm():
 
 #### 5. **No Historical Data Warning**
 ```
-⚠️  Step 3: No historical data found
+  Step 3: No historical data found
 ```
 This is normal if you haven't created `patient_data.txt`. The system will still work without RAG.
 
 ---
 
-## 🔬 CSV Data Format
+##  CSV Data Format
 
 If using historical data, your CSV should have these columns:
 ```csv
@@ -435,7 +435,7 @@ Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunc
 
 ---
 
-## 🎯 Best Practices
+##  Best Practices
 
 ### For Accurate Results:
 1. **Provide accurate patient data** - All measurements should be recent
@@ -452,7 +452,7 @@ Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunc
 
 ---
 
-## 📈 Extending the System
+##  Extending the System
 
 ### Add New Meal Types
 ```python
@@ -494,7 +494,7 @@ def research_latest_guidelines(state: DietPlanState) -> DietPlanState:
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please follow these steps:
 
@@ -506,7 +506,7 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## ⚠️ Disclaimer
+##  Disclaimer
 
 **This application is for educational and informational purposes only.**
 
@@ -518,13 +518,13 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **LangChain** - For the amazing LLM framework
 - **LangGraph** - For state management capabilities
@@ -538,12 +538,12 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 For issues, questions, or suggestions:
 - Open an issue on GitHub
-- Email: your-email@example.com
+- Email: talhaabdulsattar018@example.com
 - Documentation: [Link to docs]
 
 ---
 
-## 🗺️ Roadmap
+##  Roadmap
 
 - [ ] Web interface with Gradio/Streamlit
 - [ ] Multi-language support
@@ -556,6 +556,6 @@ For issues, questions, or suggestions:
 
 ---
 
-**Built with ❤️ using LangChain, LangGraph, and Ollama**
+**Built with  using LangChain, LangGraph, and Ollama**
 
 *Last Updated: December 2024*
